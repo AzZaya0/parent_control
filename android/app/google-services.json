@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "74252558436",
+    "firebase_url": "https://final-dg-24101-default-rtdb.firebaseio.com",
+    "project_id": "final-dg-24101",
+    "storage_bucket": "final-dg-24101.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74252558436:android:481a17a4049f9849bbff71",
+        "android_client_info": {
+          "package_name": "com.example.parent_control"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkkTjr8Xqn2EHI1hVQE8jrlAZ1XidzRYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
