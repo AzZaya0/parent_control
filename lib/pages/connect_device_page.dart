@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:parent_control/child/child_dashboard.dart';
 import 'package:parent_control/parent/dashboard_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:parent_control/pages/role_selection.dart';
 
 import '../services/device_services.dart';
 
@@ -115,18 +116,30 @@ class _ConnectDevicePageState extends State<ConnectDevicePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text('Connect Device'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => RoleSelectionPage()), // Parent dashboard
+      ); 
+          },
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _buildHeader(), // Custom method to build the header
+            _buildHeader(), 
             const SizedBox(height: 30),
-            _buildDeviceNameField(), // Custom method for the device name input
+            _buildDeviceNameField(), 
             const SizedBox(height: 20),
-            _buildOSDropdown(), // Custom method for the OS selection dropdown
+            _buildOSDropdown(), 
             const SizedBox(height: 20),
-            _buildConnectButton(), // Custom method for the Connect button
+            _buildConnectButton(), 
           ],
         ),
       ),
